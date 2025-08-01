@@ -1,9 +1,4 @@
-use std::{
-    env,
-    io::{Stdout, Write, stdin, stdout},
-    path::Path,
-    process::{Child, Command, Stdio},
-};
+use std::{ env, io::{Write, stdin, stdout}, path::Path, process::{Child, Command, Stdio}};
 
 fn main() {
     loop {
@@ -60,14 +55,6 @@ fn main() {
                             eprintln!("{}", e);
                         }
                     };
-                    /*let child = Command::new(command).args(args).spawn();
-
-                    match child {
-                        Ok(mut child) => {
-                            child.wait();
-                        }
-                        Err(e) => eprintln!("{}", e),
-                    };*/
                 }
             }
         }
